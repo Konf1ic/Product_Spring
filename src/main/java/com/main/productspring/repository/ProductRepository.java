@@ -53,10 +53,9 @@ public class ProductRepository implements IProductRepository {
         return nameProductList;
     }
 
-    @Override
+    @Override       // Tìm sản phẩm
     public List<Product> search(String name) {
         List<Product> productList = new ArrayList<>(productMap.values());
-//        List rỗng để lấy name khi search
         List<Product> products = new ArrayList<>();
         for (Product product: productList) {
             if (product.getNameProduct().contains(name)) {

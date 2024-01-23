@@ -13,10 +13,12 @@
     </a>
 </p>
 
-<form method="get" th:action="@{/product/search}">
+<form method="get" th:action="@{/product/search}">      // Ô search
     <input type="text" name="searchName" placeholder="search by name"/>
+    <br>
     <button>Search</button>
 </form>
+
 <div class="notify">
     <div th:if="${success}">
         <span th:text="${success}"></span>

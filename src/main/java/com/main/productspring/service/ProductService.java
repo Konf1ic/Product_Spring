@@ -37,12 +37,12 @@ public class ProductService implements IProductService{
     }
 
     @Override
-    public List<String> findNameProduct() {
+    public List<String> findNameProduct() {         // Search theo tên
         return iProductRepository.findNameProduct();
     }
 
     @Override
-    public List<Product> search(String name) {
+    public List<Product> search(String name) {      // Search for products
         return iProductRepository.search(name);
     }
 }
